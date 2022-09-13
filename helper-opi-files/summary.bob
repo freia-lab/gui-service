@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>summary</name>
+  <width>600</width>
+  <height>1000</height>
+  <widget type="group" version="2.0.0">
+    <name>2K Pumps</name>
+    <macros>
+      <PREFIX>CstatH-2Kpumps</PREFIX>
+    </macros>
+    <width>592</width>
+    <height>252</height>
+    <transparent>true</transparent>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display</name>
+      <macros>
+        <P>$(PREFIX):P1A</P>
+      </macros>
+      <file>optime-1.bob</file>
+      <width>550</width>
+      <height>30</height>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_1</name>
+      <macros>
+        <P>$(PREFIX):P1B</P>
+      </macros>
+      <file>optime-1.bob</file>
+      <y>30</y>
+      <width>550</width>
+      <height>30</height>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_2</name>
+      <macros>
+        <P>$(PREFIX):P1C</P>
+      </macros>
+      <file>optime-1.bob</file>
+      <y>60</y>
+      <width>550</width>
+      <height>30</height>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_3</name>
+      <macros>
+        <P>$(PREFIX):P1D</P>
+      </macros>
+      <file>optime-1.bob</file>
+      <y>90</y>
+      <width>550</width>
+      <height>30</height>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_4</name>
+      <macros>
+        <P>$(PREFIX):P2</P>
+      </macros>
+      <file>optime-1.bob</file>
+      <y>120</y>
+      <width>550</width>
+      <height>30</height>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_5</name>
+      <macros>
+        <P>$(PREFIX):P3A</P>
+      </macros>
+      <file>optime-1.bob</file>
+      <y>150</y>
+      <width>550</width>
+      <height>30</height>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_6</name>
+      <macros>
+        <P>$(PREFIX):P3B</P>
+      </macros>
+      <file>optime-1.bob</file>
+      <y>180</y>
+      <width>550</width>
+      <height>30</height>
+      <resize>4</resize>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Vacuum pumps - HNOSS</name>
+    <macros>
+      <PREFIX>CstatH-Vac</PREFIX>
+    </macros>
+    <y>252</y>
+    <width>592</width>
+    <height>102</height>
+    <transparent>true</transparent>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_12</name>
+      <macros>
+        <P>$(PREFIX):TP002</P>
+      </macros>
+      <file>optime-1.bob</file>
+      <y>30</y>
+      <width>489</width>
+      <height>30</height>
+      <resize>4</resize>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_7</name>
+      <macros>
+        <P>$(PREFIX):TP001</P>
+      </macros>
+      <file>optime-1.bob</file>
+      <y>7</y>
+      <width>489</width>
+      <height>30</height>
+      <resize>4</resize>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Vacuum pumps Gersemi</name>
+    <macros>
+      <PREFIX>CstatV-Vac</PREFIX>
+    </macros>
+    <y>350</y>
+    <width>592</width>
+    <height>102</height>
+    <transparent>true</transparent>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_13</name>
+      <macros>
+        <P>$(PREFIX):TP050</P>
+      </macros>
+      <file>optime-1.bob</file>
+      <y>-1</y>
+      <width>489</width>
+      <height>30</height>
+      <resize>4</resize>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_14</name>
+      <macros>
+        <P>$(PREFIX):TP060</P>
+      </macros>
+      <file>optime-1.bob</file>
+      <y>30</y>
+      <width>489</width>
+      <height>30</height>
+      <resize>4</resize>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Cooling water pumps</name>
+    <macros>
+      <PREFIX>WtrC-Dwtr</PREFIX>
+    </macros>
+    <y>450</y>
+    <width>592</width>
+    <height>102</height>
+    <transparent>true</transparent>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_15</name>
+      <macros>
+        <P>$(PREFIX):P1</P>
+      </macros>
+      <file>optime-1.bob</file>
+      <y>-1</y>
+      <width>489</width>
+      <height>30</height>
+      <resize>4</resize>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_16</name>
+      <macros>
+        <P>$(PREFIX):P2</P>
+      </macros>
+      <file>optime-1.bob</file>
+      <y>30</y>
+      <width>489</width>
+      <height>30</height>
+      <resize>4</resize>
+    </widget>
+  </widget>
+</display>

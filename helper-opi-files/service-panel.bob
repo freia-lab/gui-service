@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>Display</name>
+  <widget type="label" version="2.0.0">
+    <name>Label_4</name>
+    <text>Service interval:</text>
+    <x>10</x>
+    <y>100</y>
+    <width>160</width>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry_1</name>
+    <pv_name>$(P):cServiceInterval$(N)</pv_name>
+    <x>180</x>
+    <y>100</y>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button_1</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(pv_name)</pv_name>
+        <value>1</value>
+        <description>Register service$(N)</description>
+      </action>
+    </actions>
+    <pv_name>$(P):cmdRstService$(N)</pv_name>
+    <x>300</x>
+    <y>120</y>
+    <width>150</width>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_4</name>
+    <pv_name>$(P):sWarnService$(N)</pv_name>
+    <x>180</x>
+    <y>160</y>
+    <precision>2</precision>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_6</name>
+    <text>Time left to service:</text>
+    <x>10</x>
+    <y>160</y>
+    <width>160</width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_5</name>
+    <pv_name>$(P):lastService$(N)TS</pv_name>
+    <x>180</x>
+    <y>130</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_7</name>
+    <text>Last service time stamp:</text>
+    <x>10</x>
+    <y>130</y>
+    <width>190</width>
+    <tooltip>Operation hours or hours from EPICS epoch.</tooltip>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry_5</name>
+    <pv_name>$(P):cServiceDesc$(N)</pv_name>
+    <x>180</x>
+    <y>10</y>
+    <width>410</width>
+    <height>80</height>
+    <format>6</format>
+    <precision>256</precision>
+    <wrap_words>true</wrap_words>
+    <multi_line>true</multi_line>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_10</name>
+    <text>Service$(N) description:</text>
+    <x>10</x>
+    <y>10</y>
+    <width>160</width>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>  Time left to service settings  </name>
+    <y>190</y>
+    <width>392</width>
+    <height>81</height>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>Label_8</name>
+      <text>Warning:</text>
+      <y>10</y>
+      <width>80</width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_9</name>
+      <text>Alarm:</text>
+      <x>190</x>
+      <y>10</y>
+      <width>60</width>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Entry_3</name>
+      <pv_name>$(P):sWarnService$(N).LOW</pv_name>
+      <x>70</x>
+      <y>10</y>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Entry_4</name>
+      <pv_name>$(P):sWarnService$(N).LOLO</pv_name>
+      <x>250</x>
+      <y>10</y>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+  </widget>
+  <widget type="combo" version="2.0.0">
+    <name>Combo Box</name>
+    <pv_name>$(P):cServiceType$(N)</pv_name>
+    <x>300</x>
+    <y>150</y>
+    <width>150</width>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry_6</name>
+    <pv_name>$(P):lastService$(N)TS.E</pv_name>
+    <x>490</x>
+    <y>150</y>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button_2</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(pv_name)</pv_name>
+        <value>1</value>
+        <description> Set service$(N) TS</description>
+      </action>
+    </actions>
+    <pv_name>$(P):cmdSetTSservice$(N)</pv_name>
+    <x>460</x>
+    <y>120</y>
+    <width>130</width>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_13</name>
+    <text>TS:</text>
+    <x>460</x>
+    <y>150</y>
+    <width>50</width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Operation time since the last service:</text>
+    <x>392</x>
+    <y>190</y>
+    <height>71</height>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_6</name>
+    <pv_name>=`Ctrl-Time:Epoch:hours`-`$(P):lastService$(N)TS`</pv_name>
+    <x>492</x>
+    <y>200</y>
+    <height>61</height>
+    <font>
+      <font name="Header 2" family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
+      </font>
+    </font>
+    <precision>0</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+</display>

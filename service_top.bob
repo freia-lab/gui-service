@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>optimes_top</name>
+  <macros>
+    <N></N>
+    <P>xxx</P>
+  </macros>
+  <height>900</height>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <class>TITLE</class>
+    <text>Operation times &amp; service schedules</text>
+    <x use_class="true">20</x>
+    <y use_class="true">0</y>
+    <width>600</width>
+    <height use_class="true">50</height>
+    <font use_class="true">
+      <font name="Header 1" family="Source Sans Pro" style="BOLD_ITALIC" size="36.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color name="HEADER-TEXT" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <transparent use_class="true">true</transparent>
+    <horizontal_alignment use_class="true">0</horizontal_alignment>
+    <vertical_alignment use_class="true">1</vertical_alignment>
+    <wrap_words use_class="true">false</wrap_words>
+  </widget>
+  <widget type="navtabs" version="2.0.0">
+    <name>Navigation Tabs</name>
+    <tabs>
+      <tab>
+        <name>Summary</name>
+        <file>helper-opi-files/summary.bob</file>
+        <macros>
+        </macros>
+        <group_name></group_name>
+      </tab>
+      <tab>
+        <name>2K Pumps</name>
+        <file>helper-opi-files/service-2kpumps.bob</file>
+        <macros>
+          <PREFIX>CstatH-2Kpumps</PREFIX>
+        </macros>
+        <group_name></group_name>
+      </tab>
+      <tab>
+        <name>Vacuum Pumps</name>
+        <file>helper-opi-files/service-vacpumps.bob</file>
+        <macros>
+        </macros>
+        <group_name></group_name>
+      </tab>
+      <tab>
+        <name>Water Pumps</name>
+        <file>helper-opi-files/service-wtrpumps.bob</file>
+        <macros>
+        </macros>
+        <group_name></group_name>
+      </tab>
+    </tabs>
+    <x>10</x>
+    <y>50</y>
+    <width>700</width>
+    <height>620</height>
+    <direction>0</direction>
+  </widget>
+</display>

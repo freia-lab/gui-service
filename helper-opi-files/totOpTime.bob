@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>Display</name>
+  <macros>
+    <N></N>
+    <P>xxx</P>
+  </macros>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <class>TITLE</class>
+    <text>Operation time</text>
+    <x use_class="true">20</x>
+    <y use_class="true">0</y>
+    <width>550</width>
+    <height use_class="true">50</height>
+    <font use_class="true">
+      <font name="Header 1" family="Source Sans Pro" style="BOLD_ITALIC" size="36.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color name="HEADER-TEXT" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <transparent use_class="true">true</transparent>
+    <horizontal_alignment use_class="true">0</horizontal_alignment>
+    <vertical_alignment use_class="true">1</vertical_alignment>
+    <wrap_words use_class="true">false</wrap_words>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_1</name>
+    <text>Operation Time:</text>
+    <x>30</x>
+    <y>60</y>
+    <width>140</width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(P):sOpTime</pv_name>
+    <x>190</x>
+    <y>60</y>
+    <format>7</format>
+    <precision>4</precision>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_2</name>
+    <text>Preset Time:</text>
+    <x>30</x>
+    <y>90</y>
+    <width>140</width>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry</name>
+    <pv_name>$(P):cOpTimePreset</pv_name>
+    <x>190</x>
+    <y>90</y>
+    <format>7</format>
+    <precision>2</precision>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(pv_name)</pv_name>
+        <value>1</value>
+        <description>Set preset time</description>
+      </action>
+    </actions>
+    <pv_name>$(P):cmdRstOpTime</pv_name>
+    <x>320</x>
+    <y>90</y>
+    <width>130</width>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="bool_button" version="2.0.0">
+    <name>Boolean Button</name>
+    <pv_name>$(P):sOn</pv_name>
+    <x>320</x>
+    <y>50</y>
+    <width>130</width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_3</name>
+    <text>Epics Epoch Time:</text>
+    <x>320</x>
+    <y>10</y>
+    <width>130</width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_2</name>
+    <pv_name>Ctrl-Time:Epoch:seconds</pv_name>
+    <x>480</x>
+    <y>10</y>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_3</name>
+    <pv_name>Ctrl-Time:Epoch:hours</pv_name>
+    <x>480</x>
+    <y>30</y>
+  </widget>
+  <widget type="navtabs" version="2.0.0">
+    <name>Navigation Tabs</name>
+    <tabs>
+      <tab>
+        <name>Service1</name>
+        <file>service-panel.bob</file>
+        <macros>
+          <N>1</N>
+        </macros>
+        <group_name></group_name>
+      </tab>
+      <tab>
+        <name>Service2</name>
+        <file>service-panel.bob</file>
+        <macros>
+          <N>2</N>
+        </macros>
+        <group_name></group_name>
+      </tab>
+      <tab>
+        <name>Service3</name>
+        <file>service-panel.bob</file>
+        <macros>
+          <N>3</N>
+        </macros>
+        <group_name></group_name>
+      </tab>
+    </tabs>
+    <x>30</x>
+    <y>140</y>
+    <width>620</width>
+    <height>320</height>
+    <direction>0</direction>
+  </widget>
+</display>

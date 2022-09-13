@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>service-vacpumps</name>
+  <macros>
+    <P>CstatH-Vac:TP002</P>
+  </macros>
+  <widget type="label" version="2.0.0">
+    <name>Label_3</name>
+    <text>Epics Epoch Time:</text>
+    <x>410</x>
+    <width>130</width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_2</name>
+    <pv_name>Ctrl-Time:Epoch:seconds</pv_name>
+    <x>570</x>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_3</name>
+    <pv_name>Ctrl-Time:Epoch:hours</pv_name>
+    <x>570</x>
+    <y>20</y>
+  </widget>
+  <widget type="tabs" version="2.0.0">
+    <name>Tabs</name>
+    <tabs>
+      <tab>
+        <name>TP001</name>
+        <children>
+          <widget type="embedded" version="2.0.0">
+            <name>Embedded Display</name>
+            <macros>
+              <P>CstatH-Vac:TP001</P>
+            </macros>
+            <file>pumps-1s.bob</file>
+            <x>18</x>
+            <y>2</y>
+            <width>630</width>
+            <height>460</height>
+          </widget>
+        </children>
+      </tab>
+      <tab>
+        <name>TP002</name>
+        <children>
+          <widget type="embedded" version="2.0.0">
+            <name>Embedded Display_1</name>
+            <macros>
+              <P>CstatH-Vac:TP002</P>
+            </macros>
+            <file>pumps-1s.bob</file>
+            <x>18</x>
+            <y>2</y>
+            <width>630</width>
+            <height>460</height>
+          </widget>
+        </children>
+      </tab>
+      <tab>
+        <name>TP050</name>
+        <children>
+          <widget type="embedded" version="2.0.0">
+            <name>Embedded Display_2</name>
+            <macros>
+              <P>CstatV-Vac:TP050</P>
+            </macros>
+            <file>pumps-1s.bob</file>
+            <x>18</x>
+            <y>2</y>
+            <width>630</width>
+            <height>460</height>
+          </widget>
+        </children>
+      </tab>
+      <tab>
+        <name>TP060</name>
+        <children>
+          <widget type="embedded" version="2.0.0">
+            <name>Embedded Display_3</name>
+            <macros>
+              <P>CstatV-Vac:TP060</P>
+            </macros>
+            <file>pumps-1s.bob</file>
+            <x>18</x>
+            <y>2</y>
+            <width>630</width>
+            <height>460</height>
+          </widget>
+        </children>
+      </tab>
+    </tabs>
+    <x>20</x>
+    <y>20</y>
+    <width>660</width>
+    <height>500</height>
+  </widget>
+</display>

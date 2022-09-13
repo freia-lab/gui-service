@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>pumps-3s</name>
+  <widget type="group" version="2.0.0">
+    <name>Group</name>
+    <width>620</width>
+    <height>450</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="navtabs" version="2.0.0">
+      <name>Navigation Tabs</name>
+      <tabs>
+        <tab>
+          <name>Service1</name>
+          <file>service-panel.bob</file>
+          <macros>
+            <N>1</N>
+          </macros>
+          <group_name></group_name>
+        </tab>
+        <tab>
+          <name>Service2</name>
+          <file>service-panel.bob</file>
+          <macros>
+            <N>2</N>
+          </macros>
+          <group_name></group_name>
+        </tab>
+        <tab>
+          <name>Service3</name>
+          <file>service-panel.bob</file>
+          <macros>
+            <N>3</N>
+          </macros>
+          <group_name></group_name>
+        </tab>
+      </tabs>
+      <y>130</y>
+      <width>620</width>
+      <height>320</height>
+      <direction>0</direction>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display</name>
+      <file>optime.bob</file>
+      <x>70</x>
+      <width>450</width>
+      <height>120</height>
+    </widget>
+  </widget>
+</display>
