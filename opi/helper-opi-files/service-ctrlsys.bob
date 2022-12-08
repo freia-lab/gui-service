@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>service-ctrlsys</name>
+  <macros>
+    <PREFIX>Ctrl-Alarm</PREFIX>
+  </macros>
+  <widget type="label" version="2.0.0">
+    <name>Label_3</name>
+    <text>Epics Epoch Time:</text>
+    <x>410</x>
+    <width>130</width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_2</name>
+    <pv_name>Ctrl-Time:Epoch:seconds</pv_name>
+    <x>570</x>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_3</name>
+    <pv_name>Ctrl-Time:Epoch:hours</pv_name>
+    <x>570</x>
+    <y>20</y>
+  </widget>
+  <widget type="tabs" version="2.0.0">
+    <name>Tabs</name>
+    <macros>
+      <P>$(PREFIX):P2</P>
+    </macros>
+    <tabs>
+      <tab>
+        <name>PasswdToken</name>
+        <children>
+          <widget type="embedded" version="2.0.0">
+            <name>Embedded Display</name>
+            <macros>
+              <P>$(PREFIX):PasswToken</P>
+            </macros>
+            <file>alarm-config-log.bob</file>
+            <x>18</x>
+            <y>2</y>
+            <width>630</width>
+            <height>440</height>
+          </widget>
+        </children>
+      </tab>
+    </tabs>
+    <x>20</x>
+    <y>20</y>
+    <width>660</width>
+    <height>500</height>
+  </widget>
+</display>

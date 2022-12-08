@@ -1,6 +1,6 @@
 MODULE_NAME := service
 
-OPI_VERSION := 1.0.0
+OPI_VERSION := 1.1.0
 OPI_DIRNAME := service
 
 

@@ -59,6 +59,13 @@
         </macros>
         <group_name></group_name>
       </tab>
+      <tab>
+        <name>Cntrl System</name>
+        <file>helper-opi-files/service-ctrlsys.bob</file>
+        <macros>
+        </macros>
+        <group_name></group_name>
+      </tab>
     </tabs>
     <x>10</x>
     <y>50</y>
